@@ -72,7 +72,6 @@ img {
   background-color: #fff;
   overflow: hidden;
 }
-
 .left-nav {
   position: fixed;
   top: 50%;
@@ -187,6 +186,11 @@ img {
   z-index: 3;
   padding-top: 80px;
 }
+@media screen and (max-width: 1660px) {
+  .banner {
+    max-width: 900px;
+  }
+}
 .banner__top {
   position: relative;
   z-index: 3;
@@ -276,6 +280,7 @@ img {
 }
 @media screen and (max-width: 1660px) {
   .welcome {
+    max-width: 900px;
     padding: 40px 40px 60px;
   }
 }
@@ -363,6 +368,11 @@ img {
 .step {
   height: 740px;
 }
+@media screen and (max-width: 1660px) {
+  .step {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 1199.98px) {
   .step {
     height: 58vw;
@@ -382,6 +392,11 @@ img {
   margin: 0 auto;
   position: relative;
   z-index: 5;
+}
+@media screen and (max-width: 1660px) {
+  .step .container-fluid {
+    max-width: 900px;
+  }
 }
 .step [class^=col] {
   display: -webkit-box;
@@ -440,6 +455,12 @@ img {
   position: relative;
   z-index: 3;
 }
+@media screen and (max-width: 1660px) {
+  .products {
+    max-width: 900px;
+    padding: 50px 30px;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .products {
     padding: 8vw 7vw;
@@ -459,9 +480,10 @@ img {
   padding: 0 60px;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1660px) {
   .products .col-6 {
     padding: 0 20px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -482,9 +504,9 @@ img {
   position: relative;
   padding-bottom: 140px;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1660px) {
   .products .pd-link {
-    padding-bottom: 130px;
+    padding-bottom: 110px;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -514,7 +536,7 @@ img {
   font-weight: bold;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1660px) {
   .products .pd-name {
     font-size: 1.8rem;
   }
@@ -536,7 +558,7 @@ img {
   font-weight: bold;
   margin-bottom: 0;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1660px) {
   .products .pd-describe {
     font-size: 1.1rem;
   }
@@ -564,12 +586,12 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1660px) {
   .products .pd-price {
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
   .products .pd-price {
     font-size: 2.5vw;
   }
@@ -594,9 +616,9 @@ img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1660px) {
   .products .pd-btn {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 991.98px) {

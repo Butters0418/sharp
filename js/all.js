@@ -89,7 +89,7 @@
   }
 
   // aos offset
-  const aosOffset = wH > 767 ? 300 : 150;
+  const aosOffset = wH > 767 ? 200 : 150;
   AOS.init({
     offset: aosOffset,
   });

@@ -39,6 +39,9 @@
   position: relative;
   background-color: #fff;
   overflow: hidden;
+  * {
+    // outline: 1px solid #000;
+  }
 }
 
 //left nav
@@ -133,7 +136,9 @@
   position: relative;
   z-index: 3;
   padding-top: 80px;
-
+  @include media($deskTop) {
+    max-width: 900px;
+  }
   &__top {
     position: relative;
     z-index: 3;
@@ -218,6 +223,7 @@
   margin: 0 auto;
   padding: 60px 0 80px;
   @include media($deskTop) {
+    max-width: 900px;
     padding: 40px 40px 60px;
   }
   @include media($pad) {
@@ -299,6 +305,9 @@
   // position: relative;
   // z-index: 5;
   height: 740px;
+  @include media($deskTop) {
+    height: 500px;
+  }
   @include media($wide) {
     height: 58vw;
   }
@@ -316,6 +325,9 @@
     margin: 0 auto;
     position: relative;
     z-index: 5;
+    @include media($deskTop) {
+      max-width: 900px;
+    }
   }
   [class^='col'] {
     @include flexCenter;
@@ -359,6 +371,10 @@
   background-color: #fff;
   position: relative;
   z-index: 3;
+  @include media($deskTop) {
+    max-width: 900px;
+    padding: 50px 30px;
+  }
   @include media($pad) {
     padding: 8vw 7vw;
   }
@@ -373,8 +389,9 @@
   .col-6 {
     padding: 0 60px;
     margin-bottom: 40px;
-    @include media($padLg) {
+    @include media($deskTop) {
       padding: 0 20px;
+      margin-bottom: 30px;
     }
     @include media($pad) {
       padding: 0 10px;
@@ -390,8 +407,8 @@
     letter-spacing: 1px;
     position: relative;
     padding-bottom: 140px;
-    @include media($padLg) {
-      padding-bottom: 130px;
+    @include media($deskTop) {
+      padding-bottom: 110px;
     }
     @include media($pad) {
       padding-bottom: 17vw;
@@ -418,7 +435,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    @include media($wide) {
+    @include media($deskTop) {
       font-size: 1.8rem;
     }
     @include media($pad) {
@@ -434,22 +451,16 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0;
-    // height: 4rem;
-    // overflow: hidden;
-    @include media($wide) {
+    @include media($deskTop) {
       font-size: 1.1rem;
-      // height: 3.4rem;
     }
     @include media($pad) {
       font-size: 2.5vw;
-      // height: 7vw;
     }
     @include media($mobile) {
       font-size: 3vw;
-      // height: 10vw;
     }
   }
-
   .pd-footer {
     position: absolute;
     bottom: 0;
@@ -461,10 +472,10 @@
     color: #dd4485;
     font-weight: bold;
     transition: 0.3s;
-    @include media($wide) {
+    @include media($deskTop) {
       font-size: 1.1rem;
     }
-    @include media($wide) {
+    @include media($pad) {
       font-size: 2.5vw;
     }
     @include media($mobile) {
@@ -484,8 +495,8 @@
     margin: 0 auto;
     padding: 5px 0;
     transition: 0.3s;
-    @include media($wide) {
-      font-size: 2.2rem;
+    @include media($deskTop) {
+      font-size: 2rem;
     }
     @include media($padLg) {
       width: calc(100% - 20px);
