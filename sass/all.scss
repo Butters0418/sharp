@@ -232,31 +232,25 @@
 
   &__title {
     margin-bottom: 20px;
+    @include media($deskTop) {
+      width: 60%;
+      margin: 0 auto 20px;
+    }
     @include media($pad) {
       margin-bottom: 2vw;
-    }
-    img {
-      @include media($padLg) {
-        width: 75%;
-      }
-      @include media($pad) {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 
   &__subtitle {
     margin-bottom: 10px;
-    @include media($pad) {
-      margin-bottom: 1vw;
+    @include media($deskTop) {
+      width: 45%;
+      margin: 0 auto 10px;
     }
-    img {
-      @include media($padLg) {
-        width: 55%;
-      }
-      @include media($pad) {
-        width: 70%;
-      }
+    @include media($pad) {
+      width: 70%;
+      margin-bottom: 1vw;
     }
   }
 
@@ -367,38 +361,43 @@
 .products {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 70px 80px;
+  padding: 70px 0px;
   background-color: #fff;
   position: relative;
   z-index: 3;
   @include media($deskTop) {
     max-width: 900px;
-    padding: 50px 30px;
+    padding: 50px 0px;
   }
   @include media($pad) {
-    padding: 8vw 7vw;
+    padding: 8vw 0vw;
   }
   h3 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include media($deskTop) {
+      margin: 0 auto 20px;
+      width: 65%;
+    }
     @include media($pad) {
-      margin: 0 auto 5vw;
+      margin: 0 auto 4vw;
       width: 85%;
     }
   }
   .col-6 {
-    padding: 0 60px;
-    margin-bottom: 40px;
+    padding: 0 20px;
+    margin-bottom: 30px;
     @include media($deskTop) {
-      padding: 0 20px;
-      margin-bottom: 30px;
+      padding: 0 10px;
+      margin-bottom: 20px;
     }
     @include media($pad) {
-      padding: 0 10px;
-      margin-bottom: 8vw;
+      padding: 0 20px 10px;
+      margin-bottom: 40px;
     }
     @include media($mobile) {
-      padding: 0 6px;
+      padding: 0 10px;
+      margin-bottom: 20px;
     }
   }
   .pd-link {
@@ -406,19 +405,19 @@
     text-decoration: none;
     letter-spacing: 1px;
     position: relative;
-    padding-bottom: 140px;
+    padding-bottom: 110px;
     @include media($deskTop) {
-      padding-bottom: 110px;
+      padding-bottom: 90px;
     }
     @include media($pad) {
-      padding-bottom: 17vw;
+      padding-bottom: 16.5vw;
     }
     img {
       margin-bottom: 10px;
     }
     p:not(.pd-btn) {
-      padding: 0 30px;
-      @include media($padLg) {
+      padding: 0 20px;
+      @include media($deskTop) {
         padding: 0 10px;
       }
     }
@@ -432,11 +431,11 @@
     }
   }
   .pd-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
     @include media($deskTop) {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
     @include media($pad) {
       font-size: 4vw;
@@ -448,17 +447,18 @@
     }
   }
   .pd-describe {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0;
     @include media($deskTop) {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     @include media($pad) {
       font-size: 2.5vw;
     }
     @include media($mobile) {
       font-size: 3vw;
+      line-height: 1.2;
     }
   }
   .pd-footer {
@@ -468,12 +468,12 @@
     width: 100%;
   }
   .pd-price {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #dd4485;
     font-weight: bold;
     transition: 0.3s;
     @include media($deskTop) {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     @include media($pad) {
       font-size: 2.5vw;
@@ -486,17 +486,18 @@
     }
   }
   .pd-btn {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #fff;
     background-color: #dd4485;
     border-radius: 50px;
     text-align: center;
-    width: calc(100% - 60px);
+    width: calc(100% - 40px);
     margin: 0 auto;
     padding: 5px 0;
     transition: 0.3s;
     @include media($deskTop) {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      width: calc(100% - 20px);
     }
     @include media($padLg) {
       width: calc(100% - 20px);

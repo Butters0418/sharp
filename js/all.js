@@ -18,7 +18,7 @@
   function pdHtml() {
     let str = productsData
       .map((item, index) => {
-        return `<div class="col-6" data-aos="fade-up" data-aos-delay="${index * 100}" >
+        return `<div class="col-6 col-md-4" data-aos="fade-up" data-aos-delay="${index * 100}" >
     <a href="${item.url}" target="_blank" class="pd-link d-block h-100">
       <img src="${item.image}" />
       <p class="pd-name mb-0">${item.name}</p>
