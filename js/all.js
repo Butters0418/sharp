@@ -19,12 +19,14 @@
     let str = productsData
       .map((item, index) => {
         return `<div class="col-6" data-aos="fade-up" data-aos-delay="${index * 100}" >
-    <a href="${item.url}" target="_blank" class="pd-link d-block">
+    <a href="${item.url}" target="_blank" class="pd-link d-block h-100">
       <img src="${item.image}" />
       <p class="pd-name mb-0">${item.name}</p>
       <p class="pd-describe">${item.describe}</p>
-      <p class="pd-price mb-0">特價$<span>${item.price}</span></p>
-      <p class="pd-btn">立即訂購</p>
+      <div class="pd-footer">
+        <p class="pd-price mb-0">特價$<span>${item.price}</span></p>
+        <p class="pd-btn">立即訂購</p>
+      </div>
     </a>
   </div>`;
       })
