@@ -3,7 +3,7 @@
 
   // click event
   function hashLink() {
-    $('a[href^="#"]').on('click', function (e) {
+    $('a.hash[href^="#"]').on('click', function (e) {
       e.preventDefault();
       const targetTop = $($(this).attr('href')).offset().top;
       const scrollPos = wH < 1200 ? targetTop - 75 : targetTop;

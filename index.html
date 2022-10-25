@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
-    <title>歡迎光臨! ヘルシオデリ美味小食堂 新鮮食材箱-SHARP Taiwan</title>
+    <title>歡迎光臨! ヘルシオデリ美味小食堂 新鮮食材箱- SHARP Taiwan</title>
     <meta charset="utf-8" />
-    <meta name="title" content="歡迎光臨! ヘルシオデリ美味小食堂 新鮮食材箱-SHARP Taiwan" />
+    <meta name="title" content="歡迎光臨! ヘルシオデリ美味小食堂 新鮮食材箱- SHARP Taiwan " />
     <meta name="keywords" content="HEALSIO、水波爐、0水鍋、食材箱、ヘルシオデリ、食堂、SHARP、夏普" />
-    <meta name="description" content="ヘルシオデリ美味小食堂，新鮮現做美味即食享，每季嚴選不同食材箱及使用夏普廚電的烹飪教學，健康自煮讓每天的生活都美味" />
+    <meta name="description" content="ヘルシオデリ美味小食堂，新鮮現做美味自煮，每季嚴選不同食材箱及使用夏普廚電的烹飪教學，健康自煮讓每天的生活都美味" />
     <meta name="author" content="SHARP" />
     <meta name="copyright" content="Copyright © 2022 SHARP All Rights Reserved" />
     <meta property="og:title" content="歡迎光臨! ヘルシオデリ美味小食堂  新鮮食材箱" />
@@ -28,8 +28,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/components.css" />
   </head>
   <body>
+    <!-- loading -->
     <div class="loading_mask">
       <div class="ball">
         <span></span>
@@ -37,18 +39,52 @@
         <span></span>
       </div>
     </div>
+
+    <!-- header -->
+    <header class="header bg-light text-center">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="https://tw.sharp">
+            <img src="img/logo.png" alt="logo" class="header-logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">SHARP COCORO AIR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cloud">功能說明</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#connect">連線教學</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#download">下載APP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#where-to-buy">販售門市</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <div class="wrap">
       <div class="left-nav">
         <div class="left-title"><img src="img/left-step.png" alt="step" /></div>
         <ul class="left-list">
           <li>
-            <a href="#step1"><img src="img/step-one.png" alt="step-1" /></a>
+            <a href="#step1" class="hash"><img src="img/step-one.png" alt="step-1" /></a>
           </li>
           <li>
-            <a href="#step2"><img src="img/step-two.png" alt="step-2" /></a>
+            <a href="#step2" class="hash"><img src="img/step-two.png" alt="step-2" /></a>
           </li>
           <li>
-            <a href="#step3"><img src="img/step-three.png" alt="step-3" /></a>
+            <a href="#step3" class="hash"><img src="img/step-three.png" alt="step-3" /></a>
           </li>
         </ul>
       </div>
@@ -144,7 +180,133 @@
       <div class="wrap-bg"></div>
     </div>
 
+    <footer role="contentinfo" class="text-center">
+      <div class="footer-logo bg-white">
+        <img class="logo" src="https://tw.sharp/sites/default/files/styles/large/public/logo_sharp.png?itok=EhVcmlhj" alt="SHARP Taiwan" />
+      </div>
+      <div class="footer-body">
+        <div class="grid-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="region region-footer-1">
+                  <div id="block-footer" data-block-plugin-id="system_menu_block:footer">
+                    <ul class="menu">
+                      <li class="menu-item">
+                        <a href="http://www.sharp-world.com/">Global</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://tw.sharp/corporate_profile" data-drupal-link-system-path="node/77">關於夏普</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://tw.sharp/news" data-drupal-link-system-path="news">品牌消息</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://tw.sharp/Online-repair" data-drupal-link-system-path="node/482">線上報修</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="region region-footer-2">
+                  <div id="block-footertwo" data-block-plugin-id="system_menu_block:footer-two">
+                    <ul class="menu">
+                      <li class="menu-item">
+                        <a href="https://tw.sharp/contactus" title="contactus" data-drupal-link-system-path="webform/lianxiwomen_formal">聯繫我們</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://tw.sharp/where-to-buy" data-drupal-link-system-path="node/461">合作通路</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://www.sharp.com.tw/cms/index.php?act=special&amp;op=special_apply&amp;type=1">產品註冊</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="https://tw.sharp/service/faq" data-drupal-link-system-path="node/181">客戶服務</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="region region-footer-3">
+                  <div class="social">
+                    <div class="title">社群媒體</div>
+                    <div class="wrapper row">
+                      <div class="col-sm-6">
+                        <div class="social-item">
+                          <a href="https://www.facebook.com/SHARPTaiwan/">
+                            <img
+                              class="menu-icon img-responsive"
+                              src="https://tw.sharp/sites/default/files/styles/thumbnail/public/menu_icons/icon-facebook.png?itok=OovP4rea"
+                              alt=""
+                              typeof="foaf:Image"
+                            />
+                            <span class="text">Facebook</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="social-item">
+                          <a href="https://www.instagram.com/sharp_taiwan/">
+                            <img
+                              class="menu-icon img-responsive"
+                              src="https://tw.sharp/sites/default/files/styles/thumbnail/public/menu_icons/icon-instagram_0.png?itok=bPtbD11z"
+                              alt=""
+                              typeof="foaf:Image"
+                            />
+                            <span class="text">Instagram</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="social-item">
+                          <a href="https://line.me/R/ti/p/%40usj0194y">
+                            <img class="menu-icon img-responsive" src="https://tw.sharp/sites/default/files/styles/thumbnail/public/menu_icons/LINE_333.jpg?itok=M7i1E2vK" alt="" typeof="foaf:Image" />
+                            <span class="text">LINE</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="social-item">
+                          <a href="https://www.youtube.com/channel/UCFevHGPIv1FLoHiq4kXe7xA">
+                            <img
+                              class="menu-icon img-responsive"
+                              src="https://tw.sharp/sites/default/files/styles/thumbnail/public/menu_icons/icon-youtube_0.png?itok=Td4_FQhh"
+                              alt=""
+                              typeof="foaf:Image"
+                            />
+                            <span class="text">YouTube</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright clearfix">
+          <div class="container">
+            <div class="copyright-menu">
+              <ul>
+                <li class="menu-item">
+                  <a href="https://tw.sharp/terms/service">服務條款</a>
+                </li>
+                <li class="menu-item">
+                  <a href="https://tw.sharp/terms/privacy">隱私權聲明</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text">Copyright © 2020 SHARP All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/aos.js"></script>
     <script>
@@ -158,21 +320,21 @@
         {
           image: 'img/products-image/pd-1.png',
           name: '頂級海鮮箱',
-          describe: '菲力150g 1入+魚頭片270g 1入+干貝(3S)250g 1入+鯖魚180g 2入',
+          describe: '．菲力150g 1入<br>．魚頭片270g 1入<br>．干貝(3S)250g 1入<br>．鯖魚180g 2入',
           price: '1500',
           url: 'https://tw.sharp/',
         },
         {
           image: 'img/products-image/pd-2.png',
           name: '米其林肉品箱 ',
-          describe: '不老鮭輪切200-250g 2入+菲力150g 1入+松阪肉200g 1入+五花肉條600g 1入',
+          describe: '．不老鮭輪切200-250g 2入<br>．菲力150g 1入<br>．松阪肉200g 1入<br>．五花肉條600g 1入',
           price: '2400',
           url: 'https://tw.sharp/',
         },
         {
           image: 'img/products-image/pd-3.png',
           name: '典法國烘焙箱',
-          describe: '橄欖油巧巴達140g 2入+黑麥檸檬角麵包330g 1入+蘋果貝殼酥40g 1入+義式比薩可頌酥180g 1入+黑曲奇軟式餅乾50g 1入',
+          describe: '．橄欖油巧巴達140g 2入<br>．黑麥檸檬角麵包330g 1入<br>．蘋果貝殼酥40g 1入<br>．義式比薩可頌酥180g 1入<br>．黑曲奇軟式餅乾50g 1入',
           price: '699',
           url: 'https://tw.sharp/',
         },
