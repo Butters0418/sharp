@@ -1,6 +1,17 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
+
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 767.98px) {
+  .pc {
+    display: none;
+  }
+}
+
 button:active,
 button:focus,
 area:active,
@@ -287,6 +298,7 @@ img {
 .welcome__title {
   margin-bottom: 20px;
 }
+
 @media screen and (max-width: 1660px) {
   .welcome__title {
     width: 60%;
@@ -302,16 +314,22 @@ img {
 .welcome__subtitle {
   margin-bottom: 10px;
 }
+.welcome__subtitle p{
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
 @media screen and (max-width: 1660px) {
-  .welcome__subtitle {
-    width: 70%;
-    margin: 0 auto 10px;
+  .welcome__subtitle p{
+    font-size: 1.3rem;
+    margin: 0 auto 15px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .welcome__subtitle {
+  .welcome__subtitle p{
     width: 100%;
-    margin-bottom: 1vw;
+    font-size: 3.6vw;
+    margin-bottom: 3vw;
   }
 }
 .welcome .container-fluid {
