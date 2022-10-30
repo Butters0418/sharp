@@ -450,3 +450,22 @@ footer {
 .clearfix:after {
   clear: both;
 }
+
+iframe {
+  vertical-align: bottom;
+  height: 369px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  iframe {
+    height: 657px;
+  }
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 611px;
+  }
+}

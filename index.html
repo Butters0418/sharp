@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/componentsv1030.css" />
   </head>
   <body>
     <!-- loading -->
@@ -53,19 +53,16 @@
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#about">SHARP COCORO AIR</a>
+                <a class="nav-link" href="#welcome">關於我們</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#cloud">功能說明</a>
+                <a class="nav-link" href="#step1">美味步驟</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#connect">連線教學</a>
+                <a class="nav-link" href="#shopping">訂購食材</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#download">下載APP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#where-to-buy">販售門市</a>
+                <a href="https://tw.sharp/support/" target="_blank" class="nav-link">聯絡我們</a>
               </li>
             </ul>
           </div>
@@ -111,16 +108,22 @@
 
       <!-- welcome -->
       <div class="welcome">
-        <div class="welcome__title text-center"><img src="img/welcome-title.png" alt="歡迎光臨 ヘルシオデリ美味小食堂" /></div>
+        <div class="welcome__title text-center" id="welcome"><img src="img/welcome-title.png" alt="歡迎光臨 ヘルシオデリ美味小食堂" /></div>
         <div class="welcome__subtitle text-center">
-          <p>ヘルシオデリ ( HEALSIO DELI) 是一間以<br class="pc" />「健康(Health)」與「減鹽(HEAL SALT)為初衷創建的美味小食堂(Deli)，<br class="pc" />讓您在每日的忙錄生活中也能輕鬆自煮享有美味的熟食料理，<br class="pc" />只要透過夏普廚電內建烹調行程 及 美味食材箱料理包，即可一鍵料理美味輕鬆上桌。</p>
-          <p class="mb-0">加入我們讓你的生活更加新鮮美味!<br />這個你要加在哪邊</p>
+          <p>
+            ヘルシオデリ ( HEALSIO DELI) 是一間以<br class="pc" />「健康(Health)」與「減鹽(HEAL SALT)為初衷創建的美味小食堂(Deli)，<br
+              class="pc"
+            />讓您在每日的忙錄生活中也能輕鬆自煮享有美味的熟食料理，<br class="pc" />只要透過夏普廚電內建烹調行程 及 美味食材箱料理包，即可一鍵料理美味輕鬆上桌。
+          </p>
+          <p class="mb-0">加入我們讓你的生活更加新鮮美味!</p>
         </div>
 
         <!-- 4 group -->
         <div class="container-fluid">
           <div class="row mx-0">
-            <div data-aos="fade-up" data-aos-delay="0" class="col-6 col-md-3 text-center card-1"><img src="img/group-1.png" alt="外宿學生 一個人在外 也要均衡飲食" /><img class="card-tag" src="img/good-balence.png" alt="" /></div>
+            <div data-aos="fade-up" data-aos-delay="0" class="col-6 col-md-3 text-center card-1">
+              <img src="img/group-1.png" alt="外宿學生 一個人在外 也要均衡飲食" /><img class="card-tag" src="img/good-balence.png" alt="" />
+            </div>
             <div data-aos="fade-up" data-aos-delay="100" class="col-6 col-md-3 text-center card-2"><img src="img/group-2.png" alt="職場青年 工作忙錄  也要自煮健康" /></div>
             <div data-aos="fade-up" data-aos-delay="200" class="col-6 col-md-3 text-center card-3"><img src="img/group-3.png" alt="老夫老妻 兩人世界 小食也浪慢 " /></div>
             <div data-aos="fade-up" data-aos-delay="300" class="col-6 col-md-3 text-center card-4"><img src="img/group-4.png" alt="小資女孩 保持身材 健康輕飲食" /></div>
@@ -148,7 +151,7 @@
           <div class="row h-100">
             <div class="col-6 flex-column" data-aos="fade-up">
               <img src="img/step2-title.png" alt="選擇烹調行程 使用HEALSIO廚電料理 搭配食材箱建議料理行程調理 " />
-              <a href="javascript:;" class="step-2__btn" target="_blank">
+              <a href="https://tw.sharp/healsio/recipes" class="step-2__btn" target="_blank">
                 <img src="img/step2-btn.png" alt="查詢美味食譜" />
                 <img class="btn-hand" src="img/hand.png" />
               </a>
@@ -170,7 +173,7 @@
 
       <!-- products box -->
       <div class="products container-fluid">
-        <h3 class="text-center"><img src="img/pd-title.png" alt="美味小食堂嚴選 聯名食材箱" /></h3>
+        <h3 class="text-center"><img src="img/pd-title.png" alt="美味小食堂嚴選 聯名食材箱" id="shopping" /></h3>
         <h3 class="text-center"><img src="img/logo_A.png" alt="盛和風食集" /></h3>
         <div class="row mx-0">
           <!-- 底部修改 -->
@@ -183,12 +186,6 @@
     <!-- End Wrap -->
 
     <iframe src="https://tw.sharp/branding-footer" frameborder="0" scrolling="no" style="width: 100%" id="ft_sharp"></iframe>
-
-    <div class="backTop CGt"></div>
-    <!-- Loader  -->
-    <div class="loadPad">
-      <div class="loader_g"><i></i><i></i><i></i><i></i></div>
-    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

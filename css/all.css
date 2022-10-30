@@ -1,15 +1,10 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-
-
-.pc {
-  display: block;
-}
-
-@media screen and (max-width: 767.98px) {
-  .pc {
-    display: none;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
+html,
+body {
+  width: 100%;
+  position: relative;
+  font-family: Noto Sans TC, "微軟正黑體" Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 button:active,
@@ -29,17 +24,17 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 80;
+  z-index: 50;
   background-color: #dd4485;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .loading_mask .ball span {
   display: inline-block;
@@ -51,25 +46,25 @@ img {
 }
 .loading_mask .ball span:nth-last-child(1) {
   -webkit-animation: loadingBall 0.6s 0.1s infinite;
-  animation: loadingBall 0.6s 0.1s infinite;
+          animation: loadingBall 0.6s 0.1s infinite;
 }
 .loading_mask .ball span:nth-last-child(2) {
   -webkit-animation: loadingBall 0.6s 0.2s infinite;
-  animation: loadingBall 0.6s 0.2s infinite;
+          animation: loadingBall 0.6s 0.2s infinite;
 }
 .loading_mask .ball span:nth-last-child(3) {
   -webkit-animation: loadingBall 0.6s 0.3s infinite;
-  animation: loadingBall 0.6s 0.3s infinite;
+          animation: loadingBall 0.6s 0.3s infinite;
 }
 
 .load-1 .line .load-1 .line:nth-last-child(2) {
   -webkit-animation: loadingA 1.5s 0.5s infinite;
-  animation: loadingA 1.5s 0.5s infinite;
+          animation: loadingA 1.5s 0.5s infinite;
 }
 
 .load-1 .line:nth-last-child(3) {
   -webkit-animation: loadingA 1.5s 0s infinite;
-  animation: loadingA 1.5s 0s infinite;
+          animation: loadingA 1.5s 0s infinite;
 }
 
 .wrap {
@@ -84,20 +79,19 @@ img {
   z-index: 20;
   text-align: center;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 @media screen and (max-width: 1199.98px) {
   .left-nav {
-    display: none;
     padding: 4px 0;
     top: 0;
     left: 0;
     width: 100%;
     -webkit-transform: none;
-    transform: none;
+            transform: none;
     background-color: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
   }
 }
 .left-nav .left-title {
@@ -129,11 +123,11 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffadc4;
   border-radius: 50%;
   width: 60px;
@@ -248,11 +242,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .banner__bottom .banner__box {
   width: 36%;
@@ -298,7 +292,6 @@ img {
 .welcome__title {
   margin-bottom: 20px;
 }
-
 @media screen and (max-width: 1660px) {
   .welcome__title {
     width: 60%;
@@ -314,22 +307,16 @@ img {
 .welcome__subtitle {
   margin-bottom: 10px;
 }
-.welcome__subtitle p{
-  margin-bottom: 25px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
 @media screen and (max-width: 1660px) {
-  .welcome__subtitle p{
-    font-size: 1.3rem;
-    margin: 0 auto 15px;
+  .welcome__subtitle {
+    width: 45%;
+    margin: 0 auto 10px;
   }
 }
 @media screen and (max-width: 767.98px) {
-  .welcome__subtitle p{
-    width: 100%;
-    font-size: 3.6vw;
-    margin-bottom: 3vw;
+  .welcome__subtitle {
+    width: 70%;
+    margin-bottom: 1vw;
   }
 }
 .welcome .container-fluid {
@@ -344,7 +331,7 @@ img {
   }
 }
 @media screen and (max-width: 575.98px) {
-  .welcome .container-fluid [class^='col'] {
+  .welcome .container-fluid [class^=col] {
     padding: 0 6px;
   }
 }
@@ -359,7 +346,7 @@ img {
 }
 @media screen and (max-width: 767.98px) {
   .welcome .container-fluid .card-3,
-  .welcome .container-fluid .card-4 {
+.welcome .container-fluid .card-4 {
     margin-top: -4vw;
   }
 }
@@ -405,22 +392,22 @@ img {
     max-width: 900px;
   }
 }
-.step [class^='col'] {
+.step [class^=col] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.step [class^='col'] > img {
+.step [class^=col] > img {
   width: 80%;
 }
 @media screen and (max-width: 575.98px) {
-  .step [class^='col'] > img {
+  .step [class^=col] > img {
     width: 94%;
   }
 }
@@ -447,11 +434,11 @@ img {
   top: 25%;
   width: 21%;
   -webkit-animation: handAni 0.6s infinite alternate;
-  animation: handAni 0.6s infinite alternate;
+          animation: handAni 0.6s infinite alternate;
 }
 .step-2__btn:hover img:not(.btn-hand) {
   -webkit-filter: brightness(1.2);
-  filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .products {
@@ -656,49 +643,49 @@ img {
 @-webkit-keyframes loadingBall {
   0% {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   50% {
     -webkit-transform: translate(0, -15px);
-    transform: translate(0, -15px);
+            transform: translate(0, -15px);
   }
   100% {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @keyframes loadingBall {
   0% {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   50% {
     -webkit-transform: translate(0, -15px);
-    transform: translate(0, -15px);
+            transform: translate(0, -15px);
   }
   100% {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 @-webkit-keyframes handAni {
   0% {
     -webkit-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
   }
   100% {
     -webkit-transform: translate(15%, 15%);
-    transform: translate(15%, 15%);
+            transform: translate(15%, 15%);
   }
 }
 @keyframes handAni {
   0% {
     -webkit-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
   }
   100% {
     -webkit-transform: translate(15%, 15%);
-    transform: translate(15%, 15%);
+            transform: translate(15%, 15%);
   }
 }
