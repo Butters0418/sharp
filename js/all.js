@@ -1,6 +1,6 @@
 (function () {
   const wH = $(window).width();
-
+  console.log('test')
   // click event
   function hashLink() {
     $('a.hash[href^="#"]').on('click', function (e) {
